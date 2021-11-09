@@ -1,2 +1,17 @@
+//UTILS
 @import "./utils/variables";
 @import "./utils/normalize";
+@import "./utils/visually-hidden";
+
+//BASE
+@import "./base/common";
+
+//COMPONENTS
+@import "./components/container";
+@import "./components/section";
+@import "./components/section-title";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/close-modal-button";
+@import "./components/modal-form";
+//LAYOUT
