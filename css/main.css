@@ -583,11 +583,11 @@ a {
   margin-left: 93px;
 }
 
-.site-nav .item + .item {
+.site-nav .site-nav-item + .site-nav-item {
   margin-left: 50px;
 }
 
-.site-link {
+.site-nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -598,17 +598,16 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-link:hover,
-.site-link:focus {
+.site-nav-link:hover, .site-nav-link:focus {
   color: var(--accent-color);
 }
 
-.site-link.current {
+.site-nav-link.current {
   color: var(--accent-color);
   position: relative;
 }
 
-.site-link::after {
+.site-nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -621,7 +620,7 @@ a {
   opacity: 0;
 }
 
-.site-link.current::after {
+.site-nav-link.current::after {
   opacity: 1;
 }
 
@@ -632,11 +631,11 @@ a {
   align-items: center;
 }
 
-.auth-nav .item + .item {
-  margin-left: 50px;
+.auth-nav .auth-nav-item + .auth-nav-item {
+  margin-left: 30px;
 }
 
-.auth-link {
+.auth-nav-link {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
@@ -648,20 +647,19 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-link:hover,
-.auth-link:focus {
+.auth-nav-link:hover, .auth-nav-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.icon-mail {
+.auth-nav-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon-tel {
+.auth-nav-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -709,21 +707,17 @@ a {
   background-color: #118CE8;
 }
 
-.feature-list {
+.feature {
   display: flex;
   justify-content: space-between;
 }
 
-.feature-list-title {
+.feature-title {
   color: var(--primary-title-color);
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 10px;
   text-transform: uppercase;
-}
-
-.feature-list .feature-item {
-  width: 270px;
 }
 
 .feature-icon {
@@ -735,6 +729,10 @@ a {
   padding: 25px 0;
   border-radius: 4px;
   background-color: var(--button-bg-color);
+}
+
+.feature .feature-item {
+  width: 270px;
 }
 
 .icon {

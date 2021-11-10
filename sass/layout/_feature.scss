@@ -1,21 +1,17 @@
 
 
-.feature-list {
+.feature {
     display: flex;
-    justify-content: space-between
-}
+    justify-content: space-between;
 
-.feature-list-title {
+&-title {
     color: var(--primary-title-color);
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 10px;
     text-transform: uppercase;
-}
-
-.feature-list .feature-item {width: 270px;}
-
-.feature-icon {
+    }
+&-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,6 +21,10 @@
     border-radius: 4px;
     background-color: var(--button-bg-color)
     }
+}
+
+.feature .feature-item {width: 270px;}
+
 .icon {
     width: 70px;
     height: 70px;
