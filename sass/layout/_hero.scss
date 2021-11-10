@@ -12,7 +12,7 @@
     }
 
 .hero-title {
-    color: var(--primary-bg-color);
+    color: $primary-bg-color;
     margin: 0 auto;
     margin-bottom: 30px;
     width: 696px;
@@ -33,9 +33,9 @@
     border-radius: 4px;
     border: none;
 
-    background-color: var(--accent-color);
-    color: #ffffff;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $accent-color;
+    color: $primary-bg-color;
+    transition: background-color $transition;
 }
 
 .primery-button:hover,

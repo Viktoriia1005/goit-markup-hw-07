@@ -5,7 +5,7 @@
     justify-content: space-between;
 
 &-title {
-    color: var(--primary-title-color);
+    color: $primary-title-color;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 10px;
@@ -19,7 +19,7 @@
     margin-bottom: 30px;
     padding: 25px 0;
     border-radius: 4px;
-    background-color: var(--button-bg-color)
+    background-color: $button-bg-color;
     }
 }
 
