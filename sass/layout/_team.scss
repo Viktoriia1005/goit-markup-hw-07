@@ -31,13 +31,14 @@
     text-align: center;
     }
 
-.network {
-    display: flex;
-    justify-content: center;
+.team-list__network {
     margin-top: 16px;
-    }
+}
 
-.network .network__item + .network__item {margin-left: 10px;}
+.team-list__socail-link {
+    color: #AFB1B8;
+}
+
 
 .socail-link:hover,
 .socail-link:focus {

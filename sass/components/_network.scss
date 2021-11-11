@@ -1,0 +1,6 @@
+.network {
+    display: flex;
+    justify-content: center;
+    }
+
+.network .network__item + .network__item {margin-left: 10px;}
