@@ -37,28 +37,10 @@
     margin-top: 16px;
     }
 
-.network-link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    color: #AFB1B8;
-    border-radius: 50%;
-    transition: color $transition,
-    background-color $transition;
-    }    
-
-.network-icon {
-        width: 20px;
-        height: 20px;
-        fill: currentColor;
-    }
-
 .network .network-item + .network-item {margin-left: 10px;}
 
-.network-link:hover,
-.network-link:focus {
+.socail-link:hover,
+.socail-link:focus {
     background-color: $accent-color;
     color: $primary-bg-color;
     }
