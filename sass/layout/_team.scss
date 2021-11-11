@@ -31,13 +31,13 @@
     text-align: center;
     }
 
-.team-network {
+.network {
     display: flex;
     justify-content: center;
     margin-top: 16px;
     }
 
-.team-network-link {
+.network-link {
     display: flex;
     width: 44px;
     height: 44px;
@@ -49,16 +49,16 @@
     background-color $transition;
     }    
 
-.team-network-icon {
+.network-icon {
         width: 20px;
         height: 20px;
         fill: currentColor;
     }
 
-.team-network .team-network-item + .team-network-item {margin-left: 10px;}
+.network .network-item + .network-item {margin-left: 10px;}
 
-.team-network-link:hover,
-.team-network-link:focus {
+.network-link:hover,
+.network-link:focus {
     background-color: $accent-color;
     color: $primary-bg-color;
     }
