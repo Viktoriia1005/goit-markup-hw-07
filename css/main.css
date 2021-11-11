@@ -314,6 +314,18 @@ a {
   margin: 0 auto;
 }
 
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -537,23 +549,6 @@ a {
   background: #188CE8;
 }
 
-.logo-header {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #2196F3;
-}
-
-.logo-dark {
-  color: #000000;
-}
-
-/* all-nav */
 .page-header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -568,17 +563,24 @@ a {
   display: flex;
 }
 
+.page-header__logo {
+  color: #000000;
+}
+
 /* site nav */
-.site-nav {
-  display: flex;
+.main-nav__site-nav {
   margin-left: 93px;
 }
 
-.site-nav .site-nav-item + .site-nav-item {
+.site-nav {
+  display: flex;
+}
+
+.site-nav .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
-.site-nav-link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -589,16 +591,16 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav-link:hover, .site-nav-link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: #2196F3;
 }
 
-.site-nav-link.current {
+.site-nav__link.current {
   color: #2196F3;
   position: relative;
 }
 
-.site-nav-link::after {
+.site-nav__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -611,7 +613,7 @@ a {
   opacity: 0;
 }
 
-.site-nav-link.current::after {
+.site-nav__link.current::after {
   opacity: 1;
 }
 
@@ -622,11 +624,11 @@ a {
   align-items: center;
 }
 
-.auth-nav .auth-nav-item + .auth-nav-item {
+.auth-nav .auth-nav__item + .auth-nav__item {
   margin-left: 30px;
 }
 
-.auth-nav-link {
+.auth-nav__link {
   display: flex;
   align-items: center;
   color: #757575;
@@ -638,19 +640,19 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-nav-link:hover, .auth-nav-link:focus {
+.auth-nav__link:hover, .auth-nav__link:focus {
   color: #2196F3;
   fill: #2196F3;
 }
 
-.auth-nav-mail {
+.auth-nav__mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.auth-nav-tel {
+.auth-nav__tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -798,13 +800,13 @@ a {
   text-align: center;
 }
 
-.team-network {
+.network {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
 
-.team-network-link {
+.network-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -815,18 +817,18 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-network-icon {
+.network-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.team-network .team-network-item + .team-network-item {
+.network .network-item + .network-item {
   margin-left: 10px;
 }
 
-.team-network-link:hover,
-.team-network-link:focus {
+.network-link:hover,
+.network-link:focus {
   background-color: #2196F3;
   color: #ffffff;
 }
@@ -870,46 +872,31 @@ a {
   background-color: #2F303A;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
 /* logo footer */
-.logo-footer {
-  display: block;
-  margin-bottom: 20px;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #2196F3;
-}
-
-.logo-light {
+.footer__logo {
   color: #ffffff;
 }
 
-.footer-adress {
+.contacts__adress {
   color: #ffffff;
 }
 
-.footer-left {
+.left {
   width: 231px;
 }
 
-.footer-mail,
-.footer-tel {
+.contacts__mail,
+.contacts__tel {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail:hover, .footer-mail:focus {
-  color: #ffffff;
-}
-
-.footer-tel:hover, .footer-tel:focus {
+.contacts__mail:hover, .contacts__mail:focus, .contacts__tel:hover, .contacts__tel:focus {
   color: #ffffff;
 }
 
@@ -917,17 +904,20 @@ a {
   font-style: normal;
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 /* footer right */
-.footer-right {
-  width: 206px;
+.footer__right {
   margin-left: 70px;
 }
 
-.join-title {
+.right {
+  width: 206px;
+}
+
+.right__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
