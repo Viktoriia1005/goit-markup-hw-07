@@ -8,10 +8,11 @@
     border-radius: 50%;
     transition: color $transition,
     background-color $transition;
-    }    
 
-.socail-link-icon {
+    &__icon {
         width: 20px;
         height: 20px;
         fill: currentColor;
     }
+    }    
+
