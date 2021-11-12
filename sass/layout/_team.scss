@@ -37,6 +37,11 @@
 
 .team-list__social-link {
     color: #AFB1B8;
+&:hover,
+&:focus {
+    background-color: $accent-color;
+    color: $primary-bg-color;
+    }
 }
 
 

@@ -4,14 +4,14 @@
     display: flex;
     justify-content: space-between;
 
-&-title {
+&__title {
     color: $primary-title-color;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 10px;
     text-transform: uppercase;
     }
-&-icon {
+&__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,11 +21,18 @@
     border-radius: 4px;
     background-color: $button-bg-color;
     }
+&__icon {
+    width: 70px;
+    height: 70px;
+    }
+
 }
 
-.feature .feature-item {width: 270px;}
 
-.icon {
+
+.feature .feature__item {width: 270px;}
+
+.feature__icon {
     width: 70px;
     height: 70px;
     }

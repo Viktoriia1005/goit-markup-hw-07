@@ -1,10 +1,8 @@
 .clients-list {
     display: flex;
-    justify-content: center;}
+    justify-content: center;
 
-.clients-list .clients-item + .clients-item {margin-left: 30px;}
-
-.clients-link {
+&__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,15 +14,18 @@
     transition: color $transition,
     border 250ms $transition;
 }
-
-.clients-link:hover,
-.clients-link:focus {
+    
+&__link:hover,
+&__link:focus {
     color: $accent-color;
     border: 1px solid $accent-color;
 }
-
-.clients-icon {
+&__icon {
     width: 106px;
     height: 60px;
     fill: currentColor;
 }
+}
+
+.clients-list .clients-list__item + .clients-list__item {margin-left: 30px;}
+
