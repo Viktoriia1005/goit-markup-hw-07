@@ -35,13 +35,13 @@
     margin-top: 16px;
 }
 
-.team-list__socail-link {
+.team-list__social-link {
     color: #AFB1B8;
 }
 
 
-.socail-link:hover,
-.socail-link:focus {
+.team-list__social-link:hover,
+.team-list__social-link:focus {
     background-color: $accent-color;
     color: $primary-bg-color;
     }

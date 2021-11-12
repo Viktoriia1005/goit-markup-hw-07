@@ -558,7 +558,7 @@ a {
   margin-left: 10px;
 }
 
-.socail-link {
+.social-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -568,7 +568,7 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socail-link__icon {
+.social-link__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -829,12 +829,12 @@ a {
   margin-top: 16px;
 }
 
-.team-list__socail-link {
+.team-list__social-link {
   color: #AFB1B8;
 }
 
-.socail-link:hover,
-.socail-link:focus {
+.team-list__social-link:hover,
+.team-list__social-link:focus {
   background-color: #2196F3;
   color: #ffffff;
 }
