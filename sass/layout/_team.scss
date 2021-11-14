@@ -36,18 +36,10 @@
     margin-top: 16px;
 }
 
-.team-list__social-link {
-    color: #AFB1B8;
-&:hover,
-&:focus {
-    background-color: $accent-color;
-    color: $primary-bg-color;
-    }
-}
-
-
-.team-list__social-link:hover,
-.team-list__social-link:focus {
+.network__link {
+    color: #AFB1B8;}
+    .network__link:hover,
+    .network__linkfocus {
     background-color: $accent-color;
     color: $primary-bg-color;
     }
