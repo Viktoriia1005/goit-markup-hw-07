@@ -550,10 +550,6 @@ a {
   justify-content: center;
 }
 
-.network .network__item + .network__item {
-  margin-left: 10px;
-}
-
 .network__link {
   display: flex;
   width: 44px;
@@ -568,6 +564,10 @@ a {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.network .network__item + .network__item {
+  margin-left: 10px;
 }
 
 .page-header {
@@ -840,12 +840,6 @@ a {
 
 .network__link:hover,
 .network__linkfocus {
-  background-color: #2196F3;
-  color: #ffffff;
-}
-
-.network__link:hover,
-.network__link:focus {
   background-color: #2196F3;
   color: #ffffff;
 }

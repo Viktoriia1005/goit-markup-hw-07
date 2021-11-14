@@ -1,22 +1,24 @@
 .network {
     display: flex;
     justify-content: center;
-    }
 
-.network .network__item + .network__item {margin-left: 10px;}
-
-.network__link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: color $transition,
-    background-color $transition;}
-
-    .network__icon {
+    &__link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: color $transition,
+        background-color $transition;}
+    
+    &__icon {
         width: 20px;
         height: 20px;
         fill: currentColor;
     }
+    
+    }
+
+.network .network__item + .network__item {margin-left: 10px;}
+
