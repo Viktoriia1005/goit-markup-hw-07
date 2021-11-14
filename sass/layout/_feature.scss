@@ -3,15 +3,16 @@
 .feature {
     display: flex;
     justify-content: space-between;
+}
 
-&__title {
+.feature__title {
     color: $primary-title-color;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 10px;
     text-transform: uppercase;
     }
-&__wrapper {
+.feature__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,18 +22,11 @@
     border-radius: 4px;
     background-color: $button-bg-color;
     }
-&__icon {
-    width: 70px;
-    height: 70px;
-    }
-
-}
-
-
-
-.feature .feature__item {width: 270px;}
-
 .feature__icon {
     width: 70px;
     height: 70px;
     }
+
+
+
+.feature .feature__item {width: 270px;}
