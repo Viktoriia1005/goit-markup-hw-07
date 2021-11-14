@@ -331,11 +331,7 @@ a {
   padding-bottom: 94px;
 }
 
-.section.other-padding {
-  padding-top: 0px;
-}
-
-.section-title {
+.section__title {
   color: #212121;
   font-weight: 700;
   font-size: 36px;
@@ -763,6 +759,10 @@ a {
   height: 70px;
 }
 
+.section--other-padding {
+  padding-top: 0px;
+}
+
 .business-list {
   display: flex;
   justify-content: space-between;
@@ -795,6 +795,10 @@ a {
   color: #ffffff;
 }
 
+.section--background {
+  background-color: #F5F4FA;
+}
+
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -812,10 +816,6 @@ a {
 .team-list .team-list__item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px;
-}
-
-.team {
-  background-color: #F5F4FA;
 }
 
 .team-list__info {
