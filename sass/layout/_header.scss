@@ -13,13 +13,12 @@
 .page-header__logo {color: #000000;}
     
     /* site nav */
-    
-.main-nav__site-nav {
-        margin-left: 93px;
-    }
 
 .site-nav {
     display: flex;
+}
+.site-nav--margin {
+    margin-left: 93px;
 }
 
 .site-nav .site-nav__item + .site-nav__item {margin-left: 50px;}
@@ -38,11 +37,9 @@
     
 &:hover,
 &:focus {color: $accent-color;}
+}
 
-&.current {color: $accent-color;
-    position: relative;}
-
-    &::after {
+.site-nav__link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -54,9 +51,11 @@
     border-radius: 2px;
     opacity: 0;
 }
-&.current::after {
-    opacity: 1;
+.site-nav__link--current {color: $accent-color;
+    position: relative;
 }
+.site-nav__link--current::after {
+    opacity: 1;
 }
 
     /* auth nav */

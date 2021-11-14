@@ -11,7 +11,7 @@
     background-size: cover;
     }
 
-.hero-title {
+.hero__title {
     color: $primary-bg-color;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -23,22 +23,22 @@
     text-transform: uppercase;
     }
     
-.primery-button {
+.hero__button {
     padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+
+    color: $primary-bg-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-
     background-color: $accent-color;
-    color: $primary-bg-color;
     transition: background-color $transition;
-}
-
-.primery-button:hover,
-.primery-button:focus {
+&:hover,
+&:focus {
     background-color: #118CE8;
 }
+}
+
