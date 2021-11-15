@@ -37,10 +37,12 @@
     margin-top: 16px;
 }
 
-.network__link {
-    color: #AFB1B8;}
-    .network__link:hover,
-    .network__linkfocus {
+.network__link:hover,
+.network__link:focus {
     background-color: $accent-color;
-    color: $primary-bg-color;
-    }
+}
+
+.network__link:hover .network__icon,
+.network__link:focus .network__icon  {
+    fill: $primary-bg-color;
+}
